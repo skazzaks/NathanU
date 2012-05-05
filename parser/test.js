@@ -9,4 +9,4 @@ console.log(data);
 // Create my parser
 var parse = PEG.buildParser(data).parse;
 // Do a test
-//assert.deepEqual( parse("(a b c)"), ["a", "b", "c"] );
+assert.deepEqual( parse("(2*3)+4"), [+] );
